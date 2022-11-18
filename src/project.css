@@ -1,0 +1,50 @@
+.Project-img{
+  height: 400px;
+}
+
+.Project{
+  display:none;
+}
+
+.Active-project{
+  display:block;
+  width: 100vw;
+  height:90vh;
+}
+
+.Tech-stack{
+  display: flex;
+  justify-content: center;
+}
+
+.Project-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Display-img{
+  height: 300px;
+  width: 550px;
+  border-radius:20px;
+  /* display:block;
+  position:relative; */
+  align-self:center;
+}
+
+.Project-title{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Pic-tech-div{
+  display:flex;
+  flex-direction: column;
+
+}
+
+.Title{
+  padding-bottom: 20px;
+}

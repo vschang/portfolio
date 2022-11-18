@@ -1,0 +1,54 @@
+.Modal{
+  background: linear-gradient(#9198e5,#e66465);
+  width: 96.9vw;
+  height:83vh;
+  position: absolute;
+  /* bottom: -100vh; */
+  bottom: -500px;
+  left:0;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 40px 40px 0px 0px;
+  border: solid white 2px;
+  overflow-y: scroll;
+  display: none;
+  transition-delay: 0.5s;
+  transition: bottom ease 1s;
+  /* outline: 8px ridge rgba(170, 50, 220, .6); */
+}
+
+.height-zero{
+  height:0;
+}
+
+/* .Modal-close{
+  height:0;
+} */
+
+.Gallery-desc-div{
+  display:flex;
+}
+
+.Desc{
+  padding: 0px 30px;
+}
+
+.X-button{
+  background: none;
+  border: 0px;
+  color: white;
+  font-size: 30px;
+  transition: transform 1s;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.X-button:hover{
+  transform: rotate(90deg);
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow: hidden;
+}
