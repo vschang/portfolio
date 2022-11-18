@@ -3,8 +3,16 @@ import Navbar from './Navbar';
 import ProjectSection from './ProjectSection';
 import { Icon } from '@iconify/react';
 
-
 function App() {
+  const sections = Array.from(document.querySelectorAll('section'));
+  sections.map((section) => {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: 'center',
+      inline: "center"
+    });
+  })
+
   return (
     <div className="App">
       <Navbar />

@@ -1,49 +1,74 @@
 import React from 'react'
-
+import styles from './animation.module.css';
 import Gallery from './Gallery'
 import './Modal.css'
+import classNames from 'classnames';
 import { Icon } from '@iconify/react';
 
 class Modal extends React.Component {
-  onClose() {
-    // Switches the value of isOpen
-    this.props.onClose()
+  constructor(props) {
+    super(props)
+    this.state = {
+      isMobile: false,
+    }
   }
-  openModal(){
-    let modal = document.querySelector(".Modal")
-    let body = document.querySelector("body")
-    body.classList.add('stop-scrolling')
-    window.requestAnimationFrame(()=>{
-      modal.style.bottom = "10px"
-    })
+
+  showMobile(){
+    this.setState({isMobile: true})
+    console.log(this.state.isMobile)
+  }
+
+  showDesktop(){
+    this.setState({isMobile: false})
+    console.log(this.state.isMobile)
+  }
+
+  onClose() {
+  this.props.onClose()
   }
 
   render(){
-    // if(!this.props.isOpen){ // if false, return nothing
-    //   return null;
-    // }
-    let body = document.querySelector("body")
-
-    if (this.props.isOpen){
-      this.openModal()
+    const isOpen = this.props.showModal
+    const body = document.querySelector('body')
+    if (isOpen){
       body.classList.add('stop-scrolling')
     } else {
       body.classList.remove('stop-scrolling')
     }
 
     return(
-      <div className="Modal" style={{display: this.props.isOpen && "block", bottom: !this.props.isOpen && "-500px"}}>
+      <div className={classNames(styles.showModal, isOpen && styles.grow)} >
         <button className="X-button" onClick={() => this.onClose()}>
           <Icon icon="ph:x-duotone" />
         </button>
-        <h1 className="Title">{this.props.title}</h1>
+        <h1 className="Project-modal-title">{this.props.title}</h1>
+        {this.props.img_mobile.length === 0 ?
+          null : (
+            <div className="Mobile-desktop-btns">
+              <button className="Button" onClick={() => this.showMobile()}>
+                <Icon icon="ph:device-mobile-speaker-light" />
+                Mobile
+              </button>
+              <button className="Button" onClick={() => this.showDesktop()}>
+                <Icon icon="material-symbols:desktop-mac-outline-rounded" />
+                Desktop
+              </button>
+            </div>)
+          }
         <div className="Gallery-desc-div">
           <div>
+          {this.state.isMobile ? (
             <Gallery
-                img={this.props.img}
+                img={this.props.img_mobile}
                 id={this.props.id}
               />
-            <div className="Tech-stack">
+          ) : (
+            <Gallery
+              img={this.props.img}
+              id={this.props.id}
+            />
+          )}
+              <div className="Tech-stack">
               {this.props.tech.map((tech, i) => {
                 const icon = this.props.icons[i]
                 return <li key={i}><Icon icon={icon} className="Icon"/> {tech}</li>
@@ -53,10 +78,10 @@ class Modal extends React.Component {
           <div className="">
             <div className="links">
               <button className="Button">
-                <a href={this.props.live} target="_blank" rel="noreferrer">live</a>
+                <a href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular" />Live</a>
               </button>
               <button className="Button">
-                <a href={this.props.code} target="_blank" rel="noreferrer" >code</a>
+                <a href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github" />Code</a>
               </button>
             </div>
             <p className="Desc">{this.props.description}</p>

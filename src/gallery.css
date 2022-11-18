@@ -5,7 +5,6 @@
 .Active-img{
   height: 400px;
   width: 730px;
-  border-radius:20px;
   display:block;
   position:relative;
 }
@@ -15,11 +14,12 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-left:30px;
 }
 
 .Dots{
   position: absolute;
-  left: 20px;
+  left: 40px;
   display: flex;
   flex-direction: column;
 }
@@ -27,6 +27,7 @@
 .Buttons-div{
   position: absolute;
   bottom: 10px;
+  right: 10px;
   display: flex;
   width: 100%;
   justify-content: flex-end;
@@ -57,4 +58,9 @@
  .Icon{
   padding: 3px;
   margin-right: 5px;
+ }
+
+ .Image{
+  height:100%;
+  border-radius:20px;
  }

@@ -55,7 +55,9 @@ class Gallery extends React.Component {
         </div>
         {this.props.img.map((img, i) => {
           return (
-            <img key={i} src={img} alt="alt" className={images[i] === current ? "Active-img" : "Project-img"}></img>
+            <div className={images[i] === current ? "Active-img" : "Project-img"}>
+              <img key={i} src={img} alt="alt" className="Image"></img>
+            </div>
           )
         })}
         <div className="Dots">
