@@ -20,15 +20,15 @@ function App() {
           <div className="About-section">
             <p className="About-text">
               Hi, I'm a junior full stack web developer career-changer pivoting from K-12 education.
-              I have experience with Ruby on Rails and lately I've been dabbling in React JS.
-              I love to see my ideas come to life. Having designed my own web apps I like to think I also have an eye for design 👀
+              I have experience with Ruby on Rails and lately I've been dabbling in ReactJS.
+              I love to see my ideas come to life. Having designed my own web apps I also like to think I have an eye for design 👀
             </p>
           </div>
           <h3 className="Subtitle">Education</h3>
-          <p className="width-90"><strong class="underline">Le Wagon</strong> 10 week intensive full stack web development bootcamp
+          <p className="width-90"><strong className="underline">Le Wagon</strong> 10 week intensive full stack web development bootcamp
           <em>Madrid, Spain</em>
           <em>January - March 2022</em></p>
-          <p className="width-90"><strong class="underline">Bowdoin College</strong> Bachelor of Arts in Biochemistry with a minor in Sociology
+          <p className="width-90"><strong className="underline">Bowdoin College</strong> Bachelor of Arts in Biochemistry with a minor in Sociology
           <em>Brunswick, Maine</em>
           <em>August 2015 - May 2019</em></p>
         </section>

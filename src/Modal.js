@@ -61,11 +61,13 @@ class Modal extends React.Component {
             <Gallery
                 img={this.props.img_mobile}
                 id={this.props.id}
+                isMobile={this.state.isMobile}
               />
           ) : (
             <Gallery
               img={this.props.img}
               id={this.props.id}
+              isMobile={this.state.isMobile}
             />
           )}
               <div className="Tech-stack">
@@ -76,6 +78,11 @@ class Modal extends React.Component {
             </div>
           </div>
           <div className="">
+            <div className="Modal-text">
+              <h3 className="Description">Description</h3>
+              <p className="Desc">{this.props.description}</p>
+              {/* <h3 className="Description">Tools and Technologies</h3> */}
+            </div>
             <div className="links">
               <button className="Button">
                 <a href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular"/><p className="Modal-btn">Live</p></a>
@@ -83,9 +90,6 @@ class Modal extends React.Component {
               <button className="Button">
                 <a href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github"/><p className="Modal-btn">Code</p ></a>
               </button>
-            </div>
-            <div>
-              <p className="Desc">{this.props.description}</p>
             </div>
           </div>
         </div>

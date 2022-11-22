@@ -7,11 +7,19 @@
 }
 
 .Desc{
-  padding: 0px 30px 0px 30px;
   overflow-y: scroll;
-  margin-top: 10px;
   height: 55vh;
-  margin-bottom: 0px;
+  margin: 0px;
+  font-size:20px;
+}
+.Description{
+  text-decoration: underline;
+  text-align: left;
+  font-size:25px;
+}
+
+.Modal-text{
+  padding: 0px 30px 0px 30px;
 }
 
 .X-button{

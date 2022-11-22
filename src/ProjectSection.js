@@ -5,50 +5,51 @@ import Project from './Project'
 const projects = [
   { id: 1,
     title: "Snacky",
-    description:'Snacky was created as a pet project of mine as I\'m a big snacker and love to try new snacks, especially from new countries. Starting from my own design creation, I chose Ruby on Rails to build this app essentially as a forum for sharing snacks and snack reviews. The app is responsive for mobile and desktop',
+    description:'Snacky was created as a pet project of mine as I\'m a big snacker and love to try new snacks, especially from foreign countries. Starting from my own design creation drawn on Figma, I chose Ruby on Rails to build this app essentially as a forum for sharing snacks and snack reviews. The app is responsive for mobile and desktop and uses the Mapbox API to display the location of where the snack was found.',
     short_desc: 'A forum for sharing snacks and snack reviews',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555944/production/portfolio/snacky-hero_fxhp5d.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555949/production/portfolio/snacky-profile_xt9e8t.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555947/production/portfolio/snacky-post_aiycet.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043057/production/portfolio/snacky-mobile-profile_rynrwb.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043054/production/portfolio/snacky-mobile-feed_ulsldj.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043064/production/portfolio/snacky-mobile-edit_ywtijn.png'],
     alt:'home page of Snacky',
     live:'http://www.snacky.fun',
     code:'https://github.com/vschang/rails-snacky',
-    tech: ['Ruby on Rails', 'Stimulus JS'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus']}
+    tech: ['Ruby on Rails', 'Stimulus JS','SQLite'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'file-icons:sqlite'],
+    tools: []}
     ,
   { id: 2,
     title: "Session",
-    description:'Session was born out of the frustration that I was unable to share music with friends on a unified app, but instead over separate messaging platforms as a link. A mobile-first app, Session fulfills the social media aspect that a majority of music streaming services lack. Through a Spotify API, users are able to create posts based on a song, artist or album they\'d like to share with their followers. Session was created in two weeks as the final project of my bootcamp and since then I\'ve made the app responsive for desktop as well as implemented a chat feature using Action Cable and Web Socket.',
+    description:'Session was born out of the frustration that I was unable to share music with friends on a unified app, but instead as a link over separate messaging platforms. Session fulfills the social media aspect that a majority of music streaming services lack. Through a Spotify API, users are able to create posts based on a song, artist or album they\'d like to share or view their own and their friend\'s Spotify statistics on their profile such as top artists, tracks and playlists. Session was created in two weeks as the final project of the Le Wagon - Madrid Bootcamp, batch #785. Since then I\'ve made a desktop version of the app as well as implemented an instant chat feature using Action Cable and Web Socket.',
     short_desc: 'A social media platform that integrates Spotify for sharing music with friends',
-    img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606108/production/portfolio/session-feed-desktop_qlsvrq.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606102/production/portfolio/session-profile_eamgcy.png'],
-    img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669047191/production/portfolio/session-mobile-hero_hqclgg.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043067/production/portfolio/session-mobile-feed_pcfhwc.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043063/production/portfolio/session-mobile-new_nyr10e.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669047349/production/portfolio/session-mobile-profile_ecpqd3.png'],
+    img: ["https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.47.27_PM_n18yod.png", "https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.46.34_PM_iczux4.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.45.47_PM_xuefy7.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135674/production/portfolio/Screen_Shot_2022-11-22_at_5.45.25_PM_s7xujr.png"],
+    img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043067/production/portfolio/session-mobile-feed_pcfhwc.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043063/production/portfolio/session-mobile-new_nyr10e.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669131647/production/portfolio/www.sessionapp.xyz_chatrooms_4_iPhone_12_Pro_vswohm.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669047349/production/portfolio/session-mobile-profile_ecpqd3.png'],
     alt:'home page of Session',
     live:'http://www.sessionapp.xyz',
     code:'https://github.com/vschang/rails-session',
-    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap']},
+    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','SQLite'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'file-icons:sqlite']},
 
   { id: 3,
     title: "MetCog",
-    description:'MetCog is a meditation app that allows the user to choose or randomize a selection of 2-3 minute breathing exercises. Throughout the process I worked closely with a UX/UI designer to build and ship the app from conception to design to final product. I chose to build it in React in order to teach myself how to use this popular JS library. This app was made for mobile, tablet and desktop',
+    description:'MetCog is a meditation app that allows the user to choose or randomize a selection of 2-3 minute breathing exercises. Throughout the process I worked closely with a UX/UI designer to build and ship the app from conception to design to final product. I chose to build it in ReactJS in order to teach myself how to use this popular JS library. This app was made for mobile, tablet and desktop',
     short_desc: 'A meditation app that allows the user to choose or randomize breathing exercises.',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555954/production/portfolio/metcog-hero_h1z2wk.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555951/production/portfolio/metcog-index_t9q1gw.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784382/production/portfolio/metcog-mobile-hero_nzzibg.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784375/production/portfolio/metcog-mobile-menu_ez6aii.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043064/production/portfolio/metcog-exercise_blwubn.png'],
     alt:'home page of MetCog',
     live:'http://www.metcog.xyz',
     code:'https://github.com/vschang/metcog/tree/master',
-    tech: ['React JS', 'Sass'],
+    tech: ['ReactJS', 'Sass'],
     icons: ['ion:logo-react', 'ion:logo-sass']},
   { id: 4,
     title: "Trashi",
-    description:'Trashi is a clone of the Airbnb model in which users can book or create listings for trash receptacles (instead of flats). It was created in one week as a project for my 9 week bootcamp at LeWagon.',
+    description:'Trashi is a clone of the Airbnb model in which users can book or create listings for trash receptacles (instead of flats). It was created in one week as a project for the Le Wagon - Madrid Bootcamp, batch #785.',
     short_desc: 'A clone of the Airbnb model for renting and listing trash receptacles',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606475/production/portfolio/trashi-hero_jovsy3.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606479/production/portfolio/trashi-index_bmzu0f.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669056185/production/portfolio/Screen_Shot_2022-11-21_at_7.42.42_PM_veodzz.png'],
     img_mobile: [],
     alt:'home page of Trashi',
     live:'https://airbnb-pablobarcena99.herokuapp.com/',
     code:'https://github.com/pablobarcena99/trashbnb',
-    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap']}
+    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','SQLite'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'file-icons:sqlite']}
 ]
 
 // project section is parent
@@ -60,7 +61,6 @@ class ProjectSection extends React.Component {
       projectNumber: 0,
     }
   }
-
 
   goForward(){
     const projects = this.state.projects

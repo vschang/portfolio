@@ -8,9 +8,14 @@
 
 .Tech-stack{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-bottom: 20px;
-  /* padding-top: 10px; */
+  padding-left: 30px;
+}
+
+.Tech-stack-show{
+  display: flex;
+  justify-content: center;
 }
 
 .Project-section{
@@ -21,9 +26,9 @@
 }
 
 .Display-img{
-  height: auto;
+  height: 327px;
   width: 600px;
-  border-radius:20px;
+  border-radius:10px;
   align-self:center;
 }
 
@@ -34,7 +39,6 @@
   width: 600px;
   margin: auto;
   position: relative;
-  padding-top:60px;
 }
 
 .Pic-tech-div{
@@ -102,19 +106,11 @@
 
 .Active-project{
   flex:3;
-  /* position: absolute; */
-  /* left: -90vw; */
+  padding-top: 80px;
   display:block;
   width: 100vw;
   height:90vh;
-  /* -webkit-animation: slide 1s forwards ease-in-out;
-  animation: slide 1s forwards ease-in-out; */
 }
-
-@-webkit-keyframes slide {
-  100% { left: 0; }
-}
-
-@keyframes slide {
-  100% { left: 0; }
+.Project-button{
+  background:none;
 }

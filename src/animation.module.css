@@ -3,10 +3,10 @@
   width: 99.75vw;
   height:0vh;
   position: absolute;
-  bottom: -5px;
+  bottom: 0px;
   left:0;
   z-index: 10;
-  border-radius: 40px 40px 0px 0px;
+  border-radius: 40px 40px 12px 12px;
   /* border: solid white 2px; */
   overflow-y: scroll;
   transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -14,9 +14,10 @@
 }
 
 .showModal.grow {
-  height:90%;
+  height:89.5%;
   border: solid white 2px;
   overflow-y: hidden;
+  overflow-x:hidden;
 }
 button:hover{
   cursor: pointer;

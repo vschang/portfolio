@@ -56,7 +56,7 @@ class Gallery extends React.Component {
         {this.props.img.map((img, i) => {
           return (
             <div className={images[i] === current ? "Active-img" : "Project-img"}>
-              <img key={i} src={img} alt="alt" className="Image"></img>
+              <img key={i} src={img} alt="alt" className={this.props.isMobile ? "Mobile-image" : "Image"}></img>
             </div>
           )
         })}
