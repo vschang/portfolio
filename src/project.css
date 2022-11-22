@@ -9,22 +9,21 @@
 .Tech-stack{
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+  /* padding-top: 10px; */
 }
 
 .Project-section{
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 90vh;
 }
 
 .Display-img{
-  height: 300px;
-  width: 550px;
+  height: auto;
+  width: 600px;
   border-radius:20px;
-  /* display:block;
-  position:relative; */
   align-self:center;
 }
 
@@ -32,9 +31,10 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  width: 550px;
+  width: 600px;
   margin: auto;
   position: relative;
+  padding-top:60px;
 }
 
 .Pic-tech-div{
@@ -47,14 +47,51 @@
   padding-bottom: 20px;
 }
 
-.Project-btn-fwd{
-  position:absolute;
-  right: 20px
+#Project-btn-fwd{
+  flex: 1;
+  cursor: none;
+  background:none;
+  border:none;
+  padding: 0px;
 }
 
-.Project-btn-back{
-  position:absolute;
-  left: 20px
+#Project-btn-back{
+  flex:1;
+  cursor: none;
+  background:none;
+  border:none;
+  padding: 0px;
+}
+
+#Next-cursor {
+  cursor: none;
+  width: 100px;
+  height: 100px;
+  background-size: 100% !important;
+  background: url("https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669041766/production/portfolio/picturetopeople.org-0cd568af47e0b36036200142013f11c45b20b9384964a29d75_uhrnmg.png") no-repeat;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#Back-cursor{
+  cursor: none;
+  width: 200px;
+  height: 200px;
+  background-size: 100% !important;
+  background: url("https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669041770/production/portfolio/picturetopeople.org-071530bbf38ba45ecad57170e162ed889e2aa292a8948651ab_buuqze.png") no-repeat;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.Project-number{
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 .See-more{
@@ -62,21 +99,16 @@
   right: 0px;
 }
 
-.Project-wrapper{
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
 
 .Active-project{
-  position: absolute;
-  left: -90vw;
+  flex:3;
+  /* position: absolute; */
+  /* left: -90vw; */
   display:block;
   width: 100vw;
   height:90vh;
-  -webkit-animation: slide 1s forwards ease-in-out;
-  animation: slide 1s forwards ease-in-out;
+  /* -webkit-animation: slide 1s forwards ease-in-out;
+  animation: slide 1s forwards ease-in-out; */
 }
 
 @-webkit-keyframes slide {

@@ -7,7 +7,11 @@
 }
 
 .Desc{
-  padding: 0px 30px;
+  padding: 0px 30px 0px 30px;
+  overflow-y: scroll;
+  margin-top: 10px;
+  height: 55vh;
+  margin-bottom: 0px;
 }
 
 .X-button{
@@ -25,18 +29,13 @@
   transform: rotate(90deg);
 }
 
-.stop-scrolling {
-  height: 100vh;
-  overflow: hidden;
-}
-
 .Project-modal-title{
   display:flex;
   width:100%;
   justify-content: flex-start;
   color: #ffffff7d;
   font-size: 80px;
-  padding: 20px 0px 0px 30px;
+  padding: 10px 0px 0px 30px;
 }
 
 .Mobile-desktop-btns{
@@ -45,5 +44,16 @@
   padding-left: 30px;
   justify-content: flex-end;
   position: absolute;
-  top: 60px;
+  top: 55px;
+}
+
+.links{
+  display: flex;
+  justify-content: center;
+}
+
+.Modal-btn{
+  margin: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
 }

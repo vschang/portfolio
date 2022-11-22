@@ -47,11 +47,11 @@ class Modal extends React.Component {
             <div className="Mobile-desktop-btns">
               <button className="Button" onClick={() => this.showMobile()}>
                 <Icon icon="ph:device-mobile-speaker-light" />
-                Mobile
+                <p className="Modal-btn">Mobile</p>
               </button>
               <button className="Button" onClick={() => this.showDesktop()}>
                 <Icon icon="material-symbols:desktop-mac-outline-rounded" />
-                Desktop
+                <p className="Modal-btn">Desktop</p>
               </button>
             </div>)
           }
@@ -78,13 +78,15 @@ class Modal extends React.Component {
           <div className="">
             <div className="links">
               <button className="Button">
-                <a href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular" />Live</a>
+                <a href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular"/><p className="Modal-btn">Live</p></a>
               </button>
               <button className="Button">
-                <a href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github" />Code</a>
+                <a href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github"/><p className="Modal-btn">Code</p ></a>
               </button>
             </div>
-            <p className="Desc">{this.props.description}</p>
+            <div>
+              <p className="Desc">{this.props.description}</p>
+            </div>
           </div>
         </div>
       </div>

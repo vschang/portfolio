@@ -5,8 +5,9 @@
 .Active-img{
   height: 400px;
   width: 730px;
-  display:block;
-  position:relative;
+  display: flex;
+  position: relative;
+  justify-content: center;
 }
 
 .Gallery{

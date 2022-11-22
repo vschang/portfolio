@@ -10,6 +10,7 @@ const Project = (props) => {
 
     return (
       <div className={props.className}>
+        <h1 className="Project-number">({props.number}/4)</h1>
         <div className="Project-title">
           <h1>{props.title}</h1>
           <button className="Button See-more" onClick={() => {handleClick()}}>
@@ -37,7 +38,7 @@ const Project = (props) => {
             }) }
           </div>
         </div>
-        <p>{props.short_desc}</p>
+        <p className="center">{props.short_desc}</p>
 
       </div>
     );

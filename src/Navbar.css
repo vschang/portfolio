@@ -7,7 +7,7 @@
   align-items:center;
   width: 100%;
   z-index: 10;
-  backdrop-filter: blur(3px);
+  backdrop-filter: invert(100%);
 }
 
 .Nav-item{
@@ -20,7 +20,7 @@
   color: white;
 }
 
-.Nav-link::after{
+/* .Nav-link::after{
   content: '';
   position: absolute;
   width: 100%;
@@ -36,7 +36,7 @@
 .Nav-link:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .Button{
   padding: 10px;
@@ -50,7 +50,9 @@
   font-size: 16px;
   box-shadow: 0 2px 0 white;
   z-index: 5;
-  
+  display: flex;
+  align-items: center;
+
 }
 
 .Resume{

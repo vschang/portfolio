@@ -1,10 +1,9 @@
 .App {
   /* background-color: #FFEA9F; */
   background: linear-gradient(#e66465, #9198e5);
-  text-align: center;
 }
 
-.App-header, section {
+section{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,6 +11,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  scroll-snap-align: center;
 }
 
 .Profile-pic{
@@ -19,11 +19,14 @@
   height: 200px;
   border-radius: 50%;
   border: solid white;
+  margin: 20px;
 }
 
 a{
   color: white;
-  text-decoration: none;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
 }
 
 ul{
@@ -51,14 +54,15 @@ h3{
   margin: 0px;
 }
 
-li:hover{
-  text-shadow: 0px 0px 6px rgba(255,255,255,0.5);
+li:hover, .Nav-link:hover, a:hover{
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
 
 .Social-link{
-  display:flex;
-  flex-direction:row-reverse;
+  display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 50%;
 }
 
 #About, #Projects, #Contact{
@@ -77,15 +81,17 @@ li:hover{
 
 .Section-title{
   position: absolute;
-  top: -20px;
+  top: 80px;
   left: 40px;
   color: #ffffff7d;
   font-size: 80px;
 }
 
 .Name{
-  color: #ffffff7d;
-  font-size: 60px;
+  background: -webkit-linear-gradient(0.5turn, rgba(255, 255, 255, 0.495), rgba(255, 255, 255, 0.495));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
 }
 
 .Subtitle{
@@ -93,4 +99,36 @@ li:hover{
     font-size: 30px;
     width: 90%;
     display: flex;
+}
+
+html{
+  scroll-snap-type: y mandatory;
+}
+
+.About-text {
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.About-section{
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  /* text-align: right; */
+}
+
+.underline{
+  text-decoration: underline;
+}
+.center{
+  text-align: center;
+}
+
+.P-l-r-10{
+  padding-left: 10px;
+  padding-right: 10px;
 }
