@@ -14,6 +14,11 @@ function App() {
           <h3>Fullstack Web Developer</h3>
           <h3>New York City, NY</h3>
           <img src='https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606112/production/portfolio/profpic_nebv6u.png' alt="profile" className="Profile-pic"></img>
+          <div className="About-links">
+            <a href="https://github.com/vschang" target="_blank" rel="noreferrer" className="Social-icon"><Icon icon="mdi:github" /></a>
+            <a href="https://www.linkedin.com/in/valeriechang97/" target="_blank" rel="noreferrer" className="Social-icon"><Icon icon="mdi:linkedin" /></a>
+            <a href = "mailto: valeriechang0@gmail.com" className="Social-icon"><Icon icon="material-symbols:mail-rounded" /></a>
+          </div>
         </section>
         <section id="About">
           <h1 className="Section-title">About</h1>
@@ -49,7 +54,7 @@ function App() {
             <a href="https://www.linkedin.com/in/valeriechang97/" target="_blank" rel="noreferrer" className="underline">/valeriechang97</a>
           </div>
           <div className="Social-link">
-            <Icon icon="ic:outline-email"/>
+            <Icon icon="material-symbols:mail-rounded" />
             <h3 className="P-l-r-10">Email</h3>
             <a href = "mailto: valeriechang0@gmail.com" className="underline">valeriechang0@gmail.com</a>
           </div>

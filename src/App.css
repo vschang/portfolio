@@ -58,10 +58,6 @@ li:hover, .Nav-link:hover, a:hover{
   text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
 }
 
-.Glow{
-  text-shadow: 0px 0px 10px rgba(255,255,255,0.5);
-}
-
 .Social-link{
   display: flex;
   align-items: center;
@@ -123,7 +119,6 @@ html{
   width: 90%;
   display: flex;
   justify-content: flex-end;
-  /* text-align: right; */
 }
 
 .underline{
@@ -136,4 +131,21 @@ html{
 .P-l-r-10{
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.About-links{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+}
+
+.Social-icon{
+  padding:10px;
+
+}
+
+.Social-icon:hover{
+  transform: translate(0, 5px);
 }

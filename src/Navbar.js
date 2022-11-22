@@ -1,5 +1,5 @@
 import './Navbar.css';
-import resume from './resources/resume-example.pdf'
+import resume from './resources/resume.pdf'
 
 
 function Navbar() {
