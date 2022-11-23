@@ -10,10 +10,10 @@ const Project = (props) => {
 
     return (
       <div className={props.className}>
-        <h1 className="Project-number">({props.number}/4)</h1>
-        <div className="Project-title">
+        <h1 className="Project-number Darker">({props.number}/4)</h1>
+        <div className="Project-title Darker">
           <h1>{props.title}</h1>
-          <button className="Button See-more" onClick={() => {handleClick()}}>
+          <button className="Dark-button See-more" onClick={() => {handleClick()}}>
             See more! 👀
           </button>
         </div>
@@ -29,7 +29,7 @@ const Project = (props) => {
           onClose={handleClick}
           img_mobile={props.img_mobile}
         />
-        <div className="Pic-tech-div">
+        <div className="Pic-tech-div Darker">
           <img src={props.img[0]} alt="" className="Display-img"></img>
           <div className="Tech-stack-show">
             {props.tech.map((tech, i) => {
@@ -38,7 +38,7 @@ const Project = (props) => {
             }) }
           </div>
         </div>
-        <p className="center">{props.short_desc}</p>
+        <p className="center Darker">{props.short_desc}</p>
 
       </div>
     );

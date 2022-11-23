@@ -12,7 +12,7 @@ function App() {
         <section className="App-header">
           <h1 className="Name">Valerie Chang</h1>
           <h3>Fullstack Web Developer</h3>
-          <h3>New York City, NY</h3>
+          <h3 className="Font-20">New York City, NY</h3>
           <img src='https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606112/production/portfolio/profpic_nebv6u.png' alt="profile" className="Profile-pic"></img>
           <div className="About-links">
             <a href="https://github.com/vschang" target="_blank" rel="noreferrer" className="Social-icon"><Icon icon="mdi:github" /></a>
@@ -38,25 +38,25 @@ function App() {
           <em>August 2015 - May 2019</em></p>
         </section>
         <section id="Projects">
-          <h1 className="Section-title">Projects</h1>
+          <h1 className="Section-title Darker-title">Projects</h1>
           <ProjectSection />
         </section>
         <section id="Contact">
-          <h1 className="Section-title">Contact</h1>
-          <div className="Social-link">
+          <h1 className="Section-title Darkest-title">Contact</h1>
+          <div className="Social-link Darkest">
             <Icon icon="mdi:github" />
             <h3 className="P-l-r-10">Github</h3>
-            <a href="https://github.com/vschang" target="_blank" rel="noreferrer" className="underline">@vschang</a>
+            <a href="https://github.com/vschang" target="_blank" rel="noreferrer" className="underline Darkest">@vschang</a>
           </div>
-          <div className="Social-link">
+          <div className="Social-link Darkest">
             <Icon icon="mdi:linkedin" />
             <h3 className="P-l-r-10">LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/valeriechang97/" target="_blank" rel="noreferrer" className="underline">/valeriechang97</a>
+            <a href="https://www.linkedin.com/in/valeriechang97/" target="_blank" rel="noreferrer" className="underline Darkest">/valeriechang97</a>
           </div>
-          <div className="Social-link">
+          <div className="Social-link Darkest">
             <Icon icon="material-symbols:mail-rounded" />
             <h3 className="P-l-r-10">Email</h3>
-            <a href = "mailto: valeriechang0@gmail.com" className="underline">valeriechang0@gmail.com</a>
+            <a href = "mailto: valeriechang0@gmail.com" className="underline Darkest">valeriechang0@gmail.com</a>
           </div>
         </section>
       </div>
