@@ -31,7 +31,7 @@ const projects = [
   { id: 3,
     title: "MetCog",
     description:'MetCog is a meditation app that allows the user to choose or randomize a selection of 2-3 minute breathing exercises. Throughout the process I worked closely with a UX/UI designer to build and ship the app from conception to design to final product. I chose to build it in ReactJS in order to teach myself how to use this popular JS library. This app was made for mobile and desktop.',
-    short_desc: 'A meditation app that allows the user to choose or randomize breathing exercises.',
+    short_desc: 'A meditation app that allows the user to choose or randomize breathing exercises',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555954/production/portfolio/metcog-hero_h1z2wk.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555951/production/portfolio/metcog-index_t9q1gw.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784382/production/portfolio/metcog-mobile-hero_nzzibg.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784375/production/portfolio/metcog-mobile-menu_ez6aii.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043064/production/portfolio/metcog-exercise_blwubn.png'],
     alt:'home page of MetCog',

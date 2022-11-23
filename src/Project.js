@@ -12,9 +12,9 @@ const Project = (props) => {
       <div className={props.className}>
         <h1 className="Project-number Darker">({props.number}/4)</h1>
         <div className="Project-title Darker">
-          <h1>{props.title}</h1>
+          <h1 className="underline">{props.title}</h1>
           <button className="Dark-button See-more" onClick={() => {handleClick()}}>
-            See more! 👀
+            <strong>See more! 👀</strong>
           </button>
         </div>
         <Modal

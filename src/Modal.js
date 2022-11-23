@@ -41,7 +41,7 @@ class Modal extends React.Component {
         <button className="X-button" onClick={() => this.onClose()}>
           <Icon icon="ph:x-duotone" />
         </button>
-        <h1 className="Project-modal-title">{this.props.title}</h1>
+        <h1 className="Project-modal-title underline">{this.props.title}</h1>
         {this.props.img_mobile.length === 0 ?
           null : (
             <div className="Mobile-desktop-btns">
