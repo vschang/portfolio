@@ -12,8 +12,8 @@ const projects = [
     alt:'home page of Snacky',
     live:'http://www.snacky.fun',
     code:'https://github.com/vschang/rails-snacky',
-    tech: ['Ruby on Rails', 'Stimulus JS','SQLite'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'file-icons:sqlite'],
+    tech: ['Ruby on Rails', 'Stimulus JS','PostgreSQL'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'akar-icons:postgresql-fill'],
     tools: []}
     ,
   { id: 2,
@@ -25,8 +25,8 @@ const projects = [
     alt:'home page of Session',
     live:'http://www.sessionapp.xyz',
     code:'https://github.com/vschang/rails-session',
-    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','SQLite'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'file-icons:sqlite']},
+    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']},
 
   { id: 3,
     title: "MetCog",
@@ -48,8 +48,8 @@ const projects = [
     alt:'home page of Trashi',
     live:'https://airbnb-pablobarcena99.herokuapp.com/',
     code:'https://github.com/pablobarcena99/trashbnb',
-    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','SQLite'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'file-icons:sqlite']}
+    tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']}
 ]
 
 // project section is parent
