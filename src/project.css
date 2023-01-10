@@ -16,6 +16,7 @@
 .Tech-stack-show{
   display: flex;
   justify-content: center;
+  margin-top:5px;
 }
 
 .Project-section{
@@ -39,6 +40,7 @@
   width: 600px;
   margin: auto;
   position: relative;
+  margin-bottom:10px;
 }
 
 

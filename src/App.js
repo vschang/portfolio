@@ -45,12 +45,12 @@ function App() {
               <div>
                 <h3 className="Subtitle">Experience</h3>
                 <p className="flex-start"><strong className="underline">Frontend Developer</strong>
-                <em>Audemic</em>
+                <a href="https://www.audemic.app" className="Glow" target="_blank" rel="noreferrer" ><em>Audemic</em></a>
                 <em>December 2022 - Present</em>
                 As a freelance developer I work closely from UX design to develop pixel perfect features for this web based productivity tool for researchers that generates audio from  journal articles
                 </p>
                 <p className="flex-start"><strong className="underline">IT Specialist</strong>
-                <em>Operation Paws for Homes</em>
+                <a href="https://ophrescue.org/" className="Glow" target="_blank" rel="noreferrer"><em>Operation Paws for Homes</em></a>
                 <em>September - November 2022</em>
                 As a volunteer, I oversaw the site's migration from version 2 to 4 of Bootstrap CSS for the animal shelter's website, ensuring compatability.
                 </p>
