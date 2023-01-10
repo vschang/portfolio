@@ -39,7 +39,7 @@ class Modal extends React.Component {
     return(
       <div className={classNames(styles.showModal, isOpen && styles.grow)} >
         <button className="X-button" onClick={() => this.onClose()}>
-          <Icon icon="ph:x-duotone" />
+          ❎
         </button>
         <h1 className="Project-modal-title underline">{this.props.title}</h1>
         {this.props.img_mobile.length === 0 ?
@@ -84,11 +84,11 @@ class Modal extends React.Component {
               {/* <h3 className="Description">Tools and Technologies</h3> */}
             </div>
             <div className="links">
-              <button className="Button">
-                <a href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular"/><p className="Modal-btn">Live</p></a>
+              <button className="Green-button">
+                <a className="Green" href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular"/><p className="Modal-btn">Live</p></a>
               </button>
-              <button className="Button">
-                <a href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github"/><p className="Modal-btn">Code</p ></a>
+              <button className="Green-button">
+                <a className="Green" href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github"/><p className="Modal-btn">Code</p ></a>
               </button>
             </div>
           </div>

@@ -147,10 +147,10 @@ class ProjectSection extends React.Component {
         </button>
 
         <div id="Back-cursor">
-          <h3>Previous</h3>
+          <h3>◀️ Previous</h3>
         </div>
         <div id="Next-cursor">
-          <h3>Next</h3>
+          <h3>Next ▶️</h3>
         </div>
       </div>
     )

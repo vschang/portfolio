@@ -1,5 +1,5 @@
 .Navbar{
-  height: 10vh;
+  height: 8vh;
   position: sticky;
   top: 0px;
   display:flex;
@@ -22,7 +22,7 @@
 
 
 .Button{
-  padding: 10px;
+  padding:6px 8px;
   margin: 5px;
   border: solid 1px white;
   border-radius: 12px;
@@ -38,12 +38,11 @@
 }
 
 .Green-button{
-  padding: 4px 8px;
+  padding:6px 8px;
   margin: 5px;
   border: solid 1px greenyellow;
-  border-radius: 19px;
-  background: rgb(173 255 47 / 10%);
-  color: greenyellow;
+  border-radius: 12px;
+  background: rgb(173 255 47 / 30%);
   text-decoration: none;
   font-family: 'Sono', sans-serif;
   font-size: 16px;
@@ -51,6 +50,10 @@
   z-index: 5;
   display: flex;
   align-items: center;
+}
+
+.Green{
+  color:greenyellow;
 }
 
 .Resume{

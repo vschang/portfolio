@@ -4,7 +4,6 @@ import ProjectSection from './ProjectSection';
 import { Icon } from '@iconify/react';
 
 function App() {
-  // window.getBoundingClientRect()
   return (
     <div className="App">
       <Navbar />
@@ -26,29 +25,37 @@ function App() {
             <p className="About-text">
               Hi, I'm a full-stack web developer career-changer pivoting from K-12 education.
               I have experience with Ruby on Rails and lately I've been dabbling in ReactJS.
-              I love to see my ideas come to life. Having designed my own web apps I also like to think I have an eye for design 👀
+              I love to see my ideas come to life. Having designed my own web apps I also like to think I have an eye for design.
             </p>
           </div>
           <div className="Flex">
             <div className="Education-section">
-              <h3 className="Subtitle flex-end">Education</h3>
-              <p className="flex-end"><strong className="underline">Le Wagon</strong> 10 week intensive full stack web development bootcamp
-              <em>Madrid, Spain</em>
-              <em>January - March 2022</em></p>
-              <p className="flex-end"><strong className="underline">Bowdoin College</strong> Bachelor of Arts in Biochemistry with a minor in Sociology
-              <em>Brunswick, Maine</em>
-              <em>August 2015 - May 2019</em></p>
+              <p className="Flex-center">💾 💾 💾</p>
+              <div>
+                <h3 className="Subtitle flex-end">Education</h3>
+                <p className="flex-end"><strong className="underline">Le Wagon</strong> 10 week intensive full stack web development bootcamp
+                <em>Madrid, Spain</em>
+                <em>January - March 2022</em></p>
+                <p className="flex-end"><strong className="underline">Bowdoin College</strong> Bachelor of Arts in Biochemistry with a minor in Sociology
+                <em>Brunswick, Maine</em>
+                <em>August 2015 - May 2019</em></p>
+              </div>
             </div>
             <div className="Work-section">
-              <h3 className="Subtitle">Experience</h3>
-              <p className="flex-start"><strong className="underline">Frontend Developer</strong> 10 week intensive full stack web development bootcamp
-              <em>Audemic</em>
-              <em>December 2022 - Present</em></p>
-              <p className="flex-start"><strong className="underline">IT Specialist</strong>
-              <em>Operation Paws for Homes</em>
-              <em>September - November 2022</em>
-              As a volunteer, I oversaw the migration from Bootstrap version 2 to 4 of the animal shelter's website, working with Ruby on Rails.
-              </p>
+              <div>
+                <h3 className="Subtitle">Experience</h3>
+                <p className="flex-start"><strong className="underline">Frontend Developer</strong>
+                <em>Audemic</em>
+                <em>December 2022 - Present</em>
+                As a freelance developer I work closely from UX design to develop pixel perfect features for this web based productivity tool for researchers that generates audio from  journal articles
+                </p>
+                <p className="flex-start"><strong className="underline">IT Specialist</strong>
+                <em>Operation Paws for Homes</em>
+                <em>September - November 2022</em>
+                As a volunteer, I oversaw the site's migration from version 2 to 4 of Bootstrap CSS for the animal shelter's website, ensuring compatability.
+                </p>
+              </div>
+              <p className="Flex-center">💫 💫 💫</p>
             </div>
           </div>
         </section>
