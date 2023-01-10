@@ -1,5 +1,5 @@
 import Modal from './Modal'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import { Icon } from '@iconify/react';
 
 // Project is child of Project Section
