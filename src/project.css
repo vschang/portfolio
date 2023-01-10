@@ -69,28 +69,15 @@
   padding: 0px;
 }
 
-#Next-cursor {
+#Next-cursor, #Back-cursor{
   cursor: none;
   width: 100px;
   height: 100px;
-  background-size: 100% !important;
-  background: url("https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669041766/production/portfolio/picturetopeople.org-0cd568af47e0b36036200142013f11c45b20b9384964a29d75_uhrnmg.png") no-repeat;
   position: absolute;
   opacity: 0;
   z-index: 1000;
   pointer-events: none;
-}
-
-#Back-cursor{
-  cursor: none;
-  width: 200px;
-  height: 200px;
-  background-size: 100% !important;
-  background: url("https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669041770/production/portfolio/picturetopeople.org-071530bbf38ba45ecad57170e162ed889e2aa292a8948651ab_buuqze.png") no-repeat;
-  position: absolute;
-  opacity: 0;
-  z-index: 1000;
-  pointer-events: none;
+  color:greenyellow;
 }
 
 .Project-number{
@@ -100,9 +87,14 @@
   right: 20px;
 }
 
-.See-more{
-  position:absolute;
-  right: 0px;
+#See-more{
+  cursor: none;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1000;
+  pointer-events: none;
 }
 
 

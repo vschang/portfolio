@@ -6,6 +6,8 @@ import { Icon } from '@iconify/react';
 // and a parent of Gallery
 const Project = (props) => {
   const [showModal, setShowModal] = useState(false);
+  const [showCursor, setShowCursor] = useState(false);
+
   const handleClick = () => setShowModal(!showModal)
 
     return (
@@ -13,9 +15,9 @@ const Project = (props) => {
         <h1 className="Project-number Darker">({props.number}/4)</h1>
         <div className="Project-title Darker">
           <h1 className="underline">{props.title}</h1>
-          <button className="Dark-button See-more" onClick={() => {handleClick()}}>
-            <strong>See more! 👀</strong>
-          </button>
+          {/* <button className="Green-button See-more" onClick={() => {handleClick()}}>
+            See more 👀
+          </button> */}
         </div>
         <Modal
           title={props.title}
@@ -29,7 +31,10 @@ const Project = (props) => {
           onClose={handleClick}
           img_mobile={props.img_mobile}
         />
-        <div className="Pic-tech-div Darker">
+        <div className="Pic-tech-div Darker"
+          onMouseEnter={() => {setShowCursor(true)}}
+          onMouseLeave={() => {setShowCursor(false)}}
+          onClick={() => {handleClick()}}>
           <img src={props.img[0]} alt="" className="Display-img"></img>
           <div className="Tech-stack-show">
             {props.tech.map((tech, i) => {
@@ -39,7 +44,10 @@ const Project = (props) => {
           </div>
         </div>
         <p className="center Darker">{props.short_desc}</p>
-
+        {
+        (<div id="See-more">
+          <h3>See More 👀</h3>
+        </div>) && showCursor}
       </div>
     );
 }

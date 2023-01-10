@@ -37,17 +37,17 @@
   align-items: center;
 }
 
-.Dark-button{
-  padding: 10px;
+.Green-button{
+  padding: 4px 8px;
   margin: 5px;
-  border: solid 1px slategrey;
-  border-radius: 12px;
-  background: rgb(112, 128, 144, 10%);
-  color: slategrey;
+  border: solid 1px greenyellow;
+  border-radius: 19px;
+  background: rgb(173 255 47 / 10%);
+  color: greenyellow;
   text-decoration: none;
   font-family: 'Sono', sans-serif;
-  font-size: 18px;
-  box-shadow: 0 2px 0 slategrey;
+  font-size: 16px;
+  box-shadow: 0 2px 0 greenyellow;
   z-index: 5;
   display: flex;
   align-items: center;
@@ -57,7 +57,7 @@
   margin-right: 20px;
 }
 
-.Button:hover, .Dark-button:hover{
+.Button:hover, .Green-button:hover{
   box-shadow: none;
   transform: translate(0, 0.2rem);
   transition-duration: 0.4s;

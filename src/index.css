@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Sono', sans-serif;
+  /* font-family: 'Sono', sans-serif; */
+  /* font-family: 'Work Sans', sans-serif; */
+  font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

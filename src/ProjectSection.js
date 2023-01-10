@@ -83,7 +83,6 @@ class ProjectSection extends React.Component {
   showCursorBack(){
     const cursorBack = document.getElementById('Back-cursor')
     cursorBack.style.opacity = '1'
-    console.log('showing back cursor')
   }
 
   showCursorNext(){
@@ -94,7 +93,6 @@ class ProjectSection extends React.Component {
   hideCursorBack(){
     const cursor = document.getElementById('Back-cursor')
     cursor.style.opacity = '0'
-    console.log('hiding back cursor')
   }
 
   hideCursorNext(){
@@ -148,8 +146,12 @@ class ProjectSection extends React.Component {
         <button id="Project-btn-fwd" onClick={() => this.goForward()} onMouseEnter={() => {this.showCursorNext(); this.followCursorNext()}} onMouseLeave={() => this.hideCursorNext()}>
         </button>
 
-        <div id="Back-cursor"></div>
-        <div id="Next-cursor"></div>
+        <div id="Back-cursor">
+          <h3>Previous</h3>
+        </div>
+        <div id="Next-cursor">
+          <h3>Next</h3>
+        </div>
       </div>
     )
   }
