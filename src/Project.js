@@ -55,7 +55,7 @@ const Project = (props) => {
         <p className="center Darker">{props.short_desc}</p>
         { showCursor &&(
         <div id="See-more">
-          <h3>See More 👀</h3>
+          <h3>Click to See More 👀</h3>
         </div>
         )}
       </div>

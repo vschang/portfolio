@@ -11,7 +11,7 @@ function App() {
         <section className="App-header">
           <h1 className="Name">Valerie Chang</h1>
           <h3>Full-stack Web Developer</h3>
-          <h3 className="Font-20">New York City, NY</h3>
+          <h3 className="Font-20">Remote, USA</h3>
           <img src='https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606112/production/portfolio/profpic_nebv6u.png' alt="profile" className="Profile-pic"></img>
           <div className="About-links">
             <a href="https://github.com/vschang" target="_blank" rel="noreferrer" className="Social-icon"><Icon icon="mdi:github" /></a>

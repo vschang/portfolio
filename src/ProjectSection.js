@@ -125,6 +125,7 @@ class ProjectSection extends React.Component {
     return (
       <div className="Project-section">
         <button id="Project-btn-back" onClick={() => this.goBack()} onMouseEnter={() => {this.showCursorBack(); this.followCursorBack()}} onMouseLeave={() => this.hideCursorBack()} >
+        ◀️
         </button>
           {projects.map((project, i) => {
             return <Project
@@ -144,13 +145,14 @@ class ProjectSection extends React.Component {
             />;
           })}
         <button id="Project-btn-fwd" onClick={() => this.goForward()} onMouseEnter={() => {this.showCursorNext(); this.followCursorNext()}} onMouseLeave={() => this.hideCursorNext()}>
+        ▶️
         </button>
 
         <div id="Back-cursor">
-          <h3>◀️ Previous</h3>
+          <h3>Previous</h3>
         </div>
         <div id="Next-cursor">
-          <h3>Next ▶️</h3>
+          <h3>Next</h3>
         </div>
       </div>
     )
