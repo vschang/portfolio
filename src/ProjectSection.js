@@ -23,7 +23,7 @@ const projects = [
     img: ["https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.47.27_PM_n18yod.png", "https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.46.34_PM_iczux4.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.45.47_PM_xuefy7.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135674/production/portfolio/Screen_Shot_2022-11-22_at_5.45.25_PM_s7xujr.png"],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043067/production/portfolio/session-mobile-feed_pcfhwc.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043063/production/portfolio/session-mobile-new_nyr10e.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669131647/production/portfolio/www.sessionapp.xyz_chatrooms_4_iPhone_12_Pro_vswohm.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669047349/production/portfolio/session-mobile-profile_ecpqd3.png'],
     alt:'home page of Session',
-    live:'http://www.sessionapp.xyz',
+    live: null,
     code:'https://github.com/vschang/rails-session',
     tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
     icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']},
@@ -46,7 +46,7 @@ const projects = [
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606475/production/portfolio/trashi-hero_jovsy3.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668606479/production/portfolio/trashi-index_bmzu0f.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669056185/production/portfolio/Screen_Shot_2022-11-21_at_7.42.42_PM_veodzz.png'],
     img_mobile: [],
     alt:'home page of Trashi',
-    live:'https://airbnb-pablobarcena99.herokuapp.com/',
+    live: null,
     code:'https://github.com/pablobarcena99/trashbnb',
     tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
     icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']}
