@@ -18,13 +18,19 @@ button:hover{
 }
 
 @media only screen and (max-width: 640px){
+  .showModal {
+    width: 98.75vw;
+  }
   .showModal.grow {
-    height:88%;
+    height:80%;
     border: solid white 2px;
     overflow-x:hidden;
   }
 }
 @media only screen and (min-width: 640px){
+  .showModal {
+    width: 99.75vw;
+  }
   .showModal.grow {
     height:90%;
     border: solid white 2px;

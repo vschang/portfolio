@@ -25,10 +25,9 @@ const Project = (props) => {
     return (
       <div className={props.className}>
         <h1 className="Project-number Darker">({props.number}/5)</h1>
-        <div className="Project-title Darker">
-          <h1 className="underline" onMouseEnter={() => {setShowCursor(true); followCursor()}}
-          onMouseLeave={() => setShowCursor(false)}
-          onClick={() => handleClick()}>{props.title}</h1>
+        <div className="Project-title Darker" onMouseEnter={() => {setShowCursor(true); followCursor()}}
+          onMouseLeave={() => setShowCursor(false)} onClick={() => handleClick()}>
+          <h1 className="underline">{props.title}</h1>
           <p className="see-more-text">click to see more 👀</p>
         </div>
         <Modal

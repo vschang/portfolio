@@ -120,7 +120,6 @@ html{
   justify-content: flex-start;
   text-align: left;
   padding-top: 30px;
-  font-size:20px;
 }
 
 .About-section{
@@ -196,13 +195,12 @@ html{
     flex-direction:row;
     align-items: center;
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;
   }
   .Name{
     text-align: left;
-    /* margin-left: 30px; */
     width:100%;
-    margin-top: -60px;
+    margin-top: -80px;
   }
   .Last-name{
     text-align: right;
@@ -224,12 +222,14 @@ html{
     color: rgba(255, 255, 255);
   }
   .Project-title-60{
-    top: 60px !important;
+    top: 80px !important;
   }
   .About-text {
     width: 100%;
     margin: 20px;
     padding-top:60px !important;
+    font-size:18px;
+
   }
   .text-right{
     text-align: right;
@@ -251,10 +251,11 @@ html{
   li{
     margin: 2px;
     width: fit-content;
+    padding-right: 8px;
   }
   .center{
     text-align: left;
-    margin-left:15px;
+    margin:15px;
   }
   #Projects{
     padding-top:30px;
@@ -305,6 +306,8 @@ html{
   .About-text {
     width: 70%;
     margin: 0;
+    font-size:20px;
+
   }
   .text-right, #Projects, .App-header, .reverse-column{
   }

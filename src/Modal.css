@@ -54,10 +54,11 @@
     color: white;
     font-size: 30px;
     position: absolute;
-    right: 0px;
+    right: -10px;
     top: 20px;
   }
   .links{
+    padding-top:10px;
     padding-bottom:20px;
   }
   .Mobile-desktop-btns{
@@ -71,6 +72,7 @@
     overflow-y: auto;
     margin: 0px;
     font-size:16px;
+    padding-bottom:80px;
   }
 }
 
