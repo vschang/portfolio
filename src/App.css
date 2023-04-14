@@ -1,5 +1,5 @@
 .App {
-
+  /* overflow-x:hidden; */
   background: linear-gradient(#3f87a6, #ebf8e1);
 }
 
@@ -12,6 +12,7 @@ section{
   font-size: calc(10px + 2vmin);
   color: white;
   scroll-snap-align: center;
+  overflow-y: hidden;
 }
 
 .Profile-pic{
@@ -93,7 +94,6 @@ p{
 
 .Section-title{
   position: absolute;
-  color: rgba(255, 255, 255, 0.4);
   font-size: 80px;
 }
 
@@ -136,7 +136,7 @@ html{
 .Social-icon{
   padding:10px;
   font-size: 30px;
-  color: greenyellow;
+  color: white;
   opacity: 0.7;
 }
 
@@ -145,17 +145,8 @@ html{
   opacity: 1;
 }
 
-.Darker-title{
-  color: rgb(112, 128, 144, 40%)
-}
-
 .Darker{
   color: slategray;
-}
-
-
-.Darkest-title{
-  color: rgb(47, 79, 79, 40%);
 }
 
 .Darkest{
@@ -174,7 +165,6 @@ html{
 .Flex-center{
   display:flex;
   justify-content:center;
-  margin-top:30px;
   font-size:22px;
   margin-bottom:0px;
 }
@@ -182,7 +172,6 @@ html{
 .Education-section{
   flex:1;
   padding-right: 20px;
-  /* margin-top:80px; */
   display:flex;
   flex-direction: column;
   justify-content: space-between;
@@ -211,8 +200,9 @@ html{
   }
   .Name{
     text-align: left;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     width:100%;
+    margin-top: -60px;
   }
   .Last-name{
     text-align: right;
@@ -231,9 +221,7 @@ html{
   .Section-title{
     top: 20px;
     right:20px;
-  }
-  .About-title{
-    top: 0px !important;
+    color: rgba(255, 255, 255);
   }
   .Project-title-60{
     top: 60px !important;
@@ -241,11 +229,12 @@ html{
   .About-text {
     width: 100%;
     margin: 20px;
+    padding-top:60px !important;
   }
   .text-right{
     text-align: right;
     width: 100%;
-    margin-right: 40px;
+    /* margin-right: 40px; */
   }
   .Social-link{
     width: 100%;
@@ -265,14 +254,34 @@ html{
   }
   .center{
     text-align: left;
-    margin-left:10px;
+    margin-left:15px;
   }
   #Projects{
     padding-top:30px;
   }
+  .Flex-center{
+    margin-top:30px;
+  }
+  .App-header{
+    margin-top: -60px;
+    margin-bottom: 60px;
+  }
+  .Darkest-title{
+    color: rgb(47, 79, 79, 100%);
+  }
+  .Darker-title{
+    color: rgb(112, 128, 144, 100%)
+  }
+  .reverse-col{
+    display:flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (min-width: 640px){
+  .About-section{
+    width:100% !important;
+  }
   .About-links{
     display:flex;
     flex-direction:column;
@@ -283,6 +292,7 @@ html{
   .Education-work-flex{
     display:flex;
     width:90%;
+    height:62vh;
   }
   .Work-section{
     border-left: dashed 1px greenyellow;
@@ -290,12 +300,13 @@ html{
   .Section-title{
     top: 80px;
     left: 40px;
+    color: rgba(255, 255, 255, 0.4);
   }
   .About-text {
-    width: 80%;
+    width: 70%;
     margin: 0;
   }
-  .text-right, #Projects{
+  .text-right, #Projects, .App-header, .reverse-column{
   }
   .Social-link{
     width: 50%;
@@ -314,5 +325,30 @@ html{
   .center{
     text-align: center;
   }
+  .Last-name{
+    text-align:right;
+  }
+  .Flex-center{
+    margin-top:0px;
+  }
+  .Education-section{
+    margin-top:20px;
+  }
+  .Darkest-title{
+    color: rgb(47, 79, 79, 40%);
+  }
+  .Darker-title{
+    color: rgb(112, 128, 144, 40%)
+  }
+}
 
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.5s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -16,22 +16,6 @@
   padding-bottom: 20px;
 }
 
-#Next-cursor, #Back-cursor, #See-more{
-  cursor: none;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  opacity: 0;
-  z-index: 1000;
-  pointer-events: none;
-  color:greenyellow;
-  display:flex;
-}
-#See-more{
-  opacity: 1;
-  text-align:center;
-}
-
 .Project-number{
   font-size: 25px;
   position: absolute;
@@ -48,6 +32,7 @@
     display:flex;
     margin-bottom:10px;
     margin-left:20px;
+    flex-direction:column;
   }
   .Display-img {
     height: auto;
@@ -100,6 +85,13 @@
     flex-wrap:wrap;
     padding: 10px 20px;
   }
+  .see-more-text{
+    margin:0;
+    display: block;
+  }
+  #Next-cursor, #Back-cursor, #See-more{
+    display: none;
+  }
 }
 @media only screen and (min-width: 640px){
   .Project-title{
@@ -110,6 +102,7 @@
     margin: auto;
     position: relative;
     margin-bottom:10px;
+    cursor: none;
   }
   .Display-img{
     height: 327px;
@@ -157,5 +150,23 @@
     justify-content: flex-start;
     padding-bottom: 20px;
     padding-left: 30px;
+  }
+  #See-more{
+    opacity: 1 !important;
+    text-align:center;
+  }
+  #Next-cursor, #Back-cursor, #See-more{
+    cursor: none;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    opacity: 0;
+    z-index: 1000;
+    pointer-events: none;
+    color:greenyellow;
+    display:flex;
+  }
+  .see-more-text{
+    display:none;
   }
 }

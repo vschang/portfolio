@@ -15,12 +15,10 @@ class Modal extends React.Component {
 
   showMobile(){
     this.setState({isMobile: true})
-    console.log(this.state.isMobile)
   }
 
   showDesktop(){
     this.setState({isMobile: false})
-    console.log(this.state.isMobile)
   }
 
   onClose() {
@@ -77,16 +75,18 @@ class Modal extends React.Component {
               }) }
             </div>
           </div>
-          <div className="">
+          <div className="reverse-col">
             <div className="Modal-text">
               <h3 className="Description">Description</h3>
               <p className="Desc">{this.props.description}</p>
               {/* <h3 className="Description">Tools and Technologies</h3> */}
             </div>
             <div className="links">
+            {this.props.live ?
               <button className="Green-button">
                 <a className="Green" href={this.props.live} target="_blank" rel="noreferrer"><Icon icon="fluent:live-24-regular"/><p className="Modal-btn">Live</p></a>
-              </button>
+              </button> : null
+            }
               <button className="Green-button">
                 <a className="Green" href={this.props.code} target="_blank" rel="noreferrer"><Icon icon="mdi:github"/><p className="Modal-btn">Code</p ></a>
               </button>

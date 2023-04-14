@@ -49,7 +49,18 @@ const projects = [
     live: null,
     code:'https://github.com/pablobarcena99/trashbnb',
     tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
-    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']}
+    icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']},
+  { id: 5,
+    title: "Zoe Kline Yoga",
+    description:'A Yoga website remade from a SquareSpace template. Allowing the user to find info, book classes and connect with Zoe.',
+    short_desc: 'A ReactJS-based yoga website remade from a SquareSpace template',
+    img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-desk-hero_trmhoy.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-desk-contact_knslok.png'],
+    img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-mobile-hero_ljogrc.png', 'https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-mobile-menu_pboqd1.png'],
+    alt:'home page of Zoe Kline Yoga',
+    live: ['https://6437f339dd7cae0008bc0d88--beamish-lamington-ecd9d0.netlify.app/'],
+    code:'https://github.com/vschang/zoe-kline-website',
+    tech: ['ReactJS'],
+    icons: ['ion:logo-react']}
 ]
 
 // project section is parent

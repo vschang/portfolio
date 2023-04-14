@@ -19,7 +19,7 @@ button:hover{
 
 @media only screen and (max-width: 640px){
   .showModal.grow {
-    height:90%;
+    height:88%;
     border: solid white 2px;
     overflow-x:hidden;
   }
