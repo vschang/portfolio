@@ -1,48 +1,30 @@
-.height-zero{
-  height:0;
-}
-
-
-.Description{
-  text-decoration: underline;
-  text-align: left;
-  font-size: 22px;
-  opacity: 0.6;
-  margin-bottom: 10px;
-}
-
-.Modal-text{
-  padding: 0px 30px 0px 30px;
-}
-
-.X-button:hover{
-  transform: rotate(90deg);
-}
-
-.Project-modal-title{
-  display:flex;
-  width:100%;
-  justify-content: flex-start;
-  color: #ffffff7d;
-  font-size: 80px;
-}
 
 .links{
+  margin:10px;
   display: flex;
   justify-content: center;
 }
 
 .Modal-btn{
-  margin: 0px;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size:16px;
+  margin: 5px;
+  padding: 15px 25px;
+  background:white;
+  border-radius: 30px;
+  font-family: 'SF-Pro-Regular';
+  font-size: 20px;
+  color:#534D56;
+  border:solid 1px white;
+  background:#534D56;
+  color:white;
 }
+
+.Modal-btn:hover, .Modal-btn.active{
+  background:white;
+  color:#534D56;
+}
+
 @media only screen and (max-width: 640px){
-  .Project-modal-title{
-    font-size: 40px;
-    padding: 24px 0px 0px 30px;
-  }
+
   .Gallery-desc-div{
     display:flex;
     flex-direction:column;
@@ -68,43 +50,30 @@
     top: 66px;
     left:20px
   }
-  .Desc{
-    overflow-y: auto;
-    margin: 0px;
-    font-size:16px;
-    padding-bottom:80px;
-  }
+
 }
 
 @media only screen and (min-width: 640px){
-  .Project-modal-title{
-    font-size: 80px;
-    padding: 10px 0px 0px 30px;
-  }
   .Gallery-desc-div{
     display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
   .X-button{
     background: none;
     border: 0px;
     color: white;
-    font-size: 25px;
+    font-size: 50px;
     position: absolute;
     right: 25px;
     top: 25px;
   }
   .Mobile-desktop-btns{
     display: flex;
-    width: 730px;
-    padding-left: 30px;
-    justify-content: flex-end;
     position: absolute;
-    top: 35px;
+    top: 40px;
+    left:40px;
   }
-  .Desc{
-    overflow-y: auto;
-    height: 55vh;
-    margin: 0px;
-    font-size:16px;
-  }
+
 }

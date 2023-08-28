@@ -45,25 +45,24 @@ class Gallery extends React.Component {
 
     return(
       <div className="Gallery">
-        <div className="Buttons-div">
-          <button className="Button" onClick={() => this.goBack()}>
-            <Icon icon="material-symbols:arrow-back-rounded" />
-          </button>
-          <button className="Button" onClick={() => this.goForward()}>
-            <Icon icon="material-symbols:arrow-forward-rounded" />
-          </button>
-        </div>
+        <button className="Back-button" onClick={() => this.goBack()}>
+          <Icon icon="grommet-icons:next" />
+        </button>
         {this.props.img.map((img, i) => {
           return (
             <div className={images[i] === current ? "Active-img" : "Project-img"}>
-              <img key={i} src={img} alt="alt" className={this.props.isMobile ? "Mobile-image" : "Image"}></img>
+              <img key={Math.random()} src={img} alt="alt" className={this.props.isMobile ? "Mobile-image" : "Image"}></img>
             </div>
           )
         })}
+        <button className="Next-button" onClick={() => this.goForward()}>
+          <Icon icon="grommet-icons:next" />
+        </button>
+
         <div className="Dots">
           {this.props.img.map((img, i) => {
             return (
-              <button key={i} className={images[i] === current ? "Dot Active-dot" : "Dot"} onClick={((e) => this.jumpTo(e))}></button>
+              <button key={Math.random()} className={images[i] === current ? "Dot Active-dot" : "Dot"} onClick={((e) => this.jumpTo(e))}></button>
             )
           })}
         </div>

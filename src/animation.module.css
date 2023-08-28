@@ -1,13 +1,11 @@
 .showModal {
-  background: darkblue;
+  background: #534d56f0;
   width: 99.75vw;
   height:0vh;
   position: absolute;
   bottom: 0px;
   left:0;
-  z-index: 10;
-  border-radius: 40px 40px 12px 12px;
-  /* border: solid white 2px; */
+  z-index: 11;
   overflow-y: scroll;
   transition: height 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transform-origin: bottom;
@@ -32,9 +30,9 @@ button:hover{
     width: 99.75vw;
   }
   .showModal.grow {
-    height:90%;
-    border: solid white 2px;
+    height:100%;
     overflow-y: hidden;
     overflow-x:hidden;
+    z-index: 11;
   }
 }

@@ -10,18 +10,8 @@
 
 .Dots{
   position: absolute;
-  left: 40px;
+  bottom: -60px;
   display: flex;
-  flex-direction: column;
-}
-
-.Buttons-div{
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
 }
 
 .Active-dot::after {
@@ -46,16 +36,30 @@
   transform: scale(1.2);
  }
 
- .Icon{
-  padding: 3px;
-  margin-right: 5px;
+ .Next-button{
+  background:none;
+  border:none;
+  color:white;
+  font-size:60px;
+  position:absolute;
+  right:-200px;
+ }
+
+ .Back-button{
+  background:none;
+  border:none;
+  transform: rotate(-180deg);
+  color:white;
+  font-size:60px;
+  position:absolute;
+  left:-200px;
  }
 
  @media only screen and (max-width: 640px){
   .Image{
     width: 100%;
     height:auto;
-    border-radius:10px;
+    border-radius:5px;
    }
    .Active-img{
     height: auto;
@@ -67,25 +71,23 @@
   }
   .Gallery{
   }
-  .Buttons-div{
-    margin-right:10px;
-  }
+
   .Mobile-image{
     height:auto;
     width:70%;
-    border-radius:10px;
+    border-radius:5px;
    }
 }
 
 @media only screen and (min-width: 640px){
   .Image{
-    width: 733px;
+    width: auto;
     height:100%;
-    border-radius:10px;
+    border-radius:5px;
    }
    .Active-img{
-    height: 400px;
-    width: 730px;
+    height: 450px;
+    width: auto;
     display: flex;
     position: relative;
     justify-content: center;
@@ -95,6 +97,6 @@
   }
   .Mobile-image{
     height:100%;
-    border-radius:10px;
+    border-radius:5px;
    }
 }

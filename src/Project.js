@@ -24,42 +24,46 @@ const Project = (props) => {
   }
     return (
       <div className={props.className}>
-        <h1 className="Project-number Darker">({props.number}/5)</h1>
-        <div className="Project-title Darker" onMouseEnter={() => {setShowCursor(true); followCursor()}}
-          onMouseLeave={() => setShowCursor(false)} onClick={() => handleClick()}>
-          <h1 className="underline">{props.title}</h1>
-          <p className="see-more-text">click to see more 👀</p>
+        <div className="project-desc-box">
+          <h1 className="Title">{props.title}</h1>
+          <p className="short-desc">{props.short_desc}</p>
+          <div className="Tech-stack-show">
+            {props.tech.map((tech, i) => {
+              const icon = props.icons[i]
+              return <div className="tech-icon" key={Math.random()}><Icon icon={icon} /> {tech}</div>
+            }) }
+          </div>
+          <p className="long-desc">{props.description}</p>
+          <div className="links">
+            {props.live ?
+              <a className="live-btn" href={props.live} target="_blank" rel="noreferrer">Live</a>
+              : null
+            }
+              <a className="live-btn" href={props.code} target="_blank" rel="noreferrer">Code</a>
+          </div>
         </div>
-        <Modal
-          title={props.title}
-          img={props.img}
-          description={props.description}
-          tech={props.tech}
-          icons={props.icons}
-          live={props.live}
-          code={props.code}
-          showModal={showModal}
-          onClose={handleClick}
-          img_mobile={props.img_mobile}
-        />
-        <div className="Pic-tech-div Darker"
+
+        <div className="Pic-tech-div"
           onMouseEnter={() => {setShowCursor(true); followCursor()}}
           onMouseLeave={() => setShowCursor(false)}
           onClick={() => handleClick()}>
           <img src={props.img[0]} alt="" className="Display-img"></img>
-          <div className="Tech-stack-show">
-            {props.tech.map((tech, i) => {
-              const icon = props.icons[i]
-              return <li key={i}><Icon icon={icon} className="Icon"/> {tech}</li>
-            }) }
-          </div>
         </div>
-        <p className="center Darker">{props.short_desc}</p>
+
+         <Modal
+          img={props.img}
+          showModal={showModal}
+          onClose={handleClick}
+          img_mobile={props.img_mobile}
+        />
+
         { showCursor &&(
         <div id="See-more">
           <h3>Click to See More 👀</h3>
         </div>
         )}
+
+        <h1 className="Project-number">({props.number}/5)</h1>
       </div>
     );
 }

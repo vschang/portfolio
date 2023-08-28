@@ -1,0 +1,45 @@
+.Social-link{
+  padding: 40px;
+  border:solid #1C5BFF 1px;
+  display: flex;
+  flex-direction: column;
+  border-radius:5px;
+}
+
+.underline{
+  text-decoration: underline;
+  font-family: 'SF-Pro-Regular';
+  font-size: 20px;
+  padding-top:40px;
+  margin:0;
+}
+
+.h-w-30{
+  height: 30px;
+  width: 30px;
+}
+
+.Github-box{
+  position: absolute;
+  left: 100px;
+  top: 200px;
+  align-items: flex-start;
+}
+
+.Linkedin-box{
+  position: absolute;
+  bottom: 200px;
+  left:350px;
+  align-items: flex-end;
+}
+
+.Email-box{
+  position:absolute;
+  right:200px;
+  align-items: flex-start;
+}
+
+.Github-box:hover, .Linkedin-box:hover, .Email-box:hover{
+  transition-duration: 1s;
+  border-radius: 50%;
+}

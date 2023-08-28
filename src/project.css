@@ -7,36 +7,112 @@
 }
 .Pic-tech-div{
   display:flex;
-  flex-direction: column;
-  position: relative;
   cursor: none;
 }
 
+.Project-section-title{
+  top:0;
+  left:20px;
+}
+
 .Title{
-  padding-bottom: 20px;
+  font-family: 'Jomolhari';
+  font-size: 40px;
+  color:#F8F1FF;
+  border: solid 5px #F8F1FF;
+  position: absolute;
+  top:20px;
+  padding:30px;
+  background: #534D56;
+  position: absolute;
+  top: -45px;
+  left: -35px;
+  padding: 20px 30px;
+  border-radius: 50%;
+}
+
+.Title:hover{
+  color:yellow;
+  background: #1C5BFF;
+  border: solid 5px yellow;
 }
 
 .Project-number{
   font-size: 25px;
   position: absolute;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .Project-button{
   background:none;
 }
 
+.tech-icon{
+  border: solid 1px white;
+  font-family: 'SF-Pro-Regular';
+  font-size: 18px;
+  margin: 5px;
+  padding:5px;
+  display: flex;
+  align-items: center;
+}
+
+.short-desc{
+  font-size: 17px;
+  color:white;
+  font-family: 'JetBrains Mono', monospace;
+  border-bottom:solid 1px white;
+  margin:0;
+  padding:10px;
+  padding-left:215px;
+  text-align:right;
+}
+
+.long-desc{
+  font-family: 'SF-Pro-Regular';
+  font-size: 18px;
+  color:white;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  margin:0;
+  padding:10px;
+}
+
+.live-btn{
+  background:white;
+  border-radius: 20px;
+  font-family: 'SF-Pro-Regular';
+  font-size: 18px;
+  padding:5px 18px;
+  margin:5px;
+  color:#534D56;
+  border:solid 1px white;
+}
+
+.live-btn:hover{
+  color:white;
+  border:solid 1px white;
+  background:transparent;
+}
+
+.project-desc-box{
+  border: solid 1px white;
+  width:420px;
+  margin:40px 40px 40px -40px;
+  position:relative;
+  height: fit-content;
+}
+
 @media only screen and (max-width: 640px){
-  .Project-title{
-    display:flex;
-    margin-bottom:10px;
-    margin-left:20px;
-    flex-direction:column;
-  }
+
   .Display-img {
     height: auto;
     width: 95%;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .Tech-stack-show{
     display: flex;
@@ -78,100 +154,84 @@
     bottom: 9%;
     right: 50%;
   }
-  .Tech-stack{
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap:wrap;
-    padding: 10px 20px;
-  }
-  .see-more-text{
-    margin:0;
-    display: block;
-  }
+
   #Next-cursor, #Back-cursor, #See-more{
     display: none;
   }
   .Project-number{
     bottom: 5px;
-    right: 5px;
   }
 }
 @media only screen and (min-width: 640px){
-  .Project-title{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    margin: auto;
-    position: relative;
-    margin-bottom:10px;
-    cursor: none;
-  }
+
   .Display-img{
     height: 327px;
     width: 600px;
-    border-radius:10px;
+    border-radius:5px;
     align-self:center;
+    cursor:none;
   }
   .Tech-stack-show{
     display: flex;
-    justify-content: center;
-    margin-top:5px;
+    flex-wrap:wrap;
+    margin:5px;
   }
   .Project-section{
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 90vh;
   }
   .Active-project{
-    flex:3;
-    padding-top: 80px;
-    display:block;
     width: 100vw;
     height:90vh;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
   }
   #Project-btn-fwd{
-    flex: 1;
     cursor: none;
     background:none;
     border:none;
-    padding: 0px;
-    font-size: 22px;
+    font-size: 60px;
+    color:white;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom:0;
+    right:0;
+    height: 200px;
+    width:200px;
   }
 
   #Project-btn-back{
-    flex:1;
     cursor: none;
     background:none;
     border:none;
     padding: 0px;
-    font-size: 22px;
+    font-size: 60px;
+    color:white;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom:0;
+    left:0;
+    height: 200px;
+    width:200px;
   }
-  .Tech-stack{
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    padding-left: 30px;
-  }
+
   #See-more{
     opacity: 1 !important;
     text-align:center;
   }
   #Next-cursor, #Back-cursor, #See-more{
     cursor: none;
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     position: absolute;
     opacity: 0;
     z-index: 1000;
     pointer-events: none;
-    color:greenyellow;
     display:flex;
   }
-  .see-more-text{
-    display:none;
-  }
+
   .Project-number{
     bottom: 20px;
     right: 20px;

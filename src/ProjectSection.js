@@ -1,12 +1,13 @@
 import React from 'react';
 import './project.css';
 import Project from './Project'
+import { Icon } from '@iconify/react';
 
 const projects = [
   { id: 1,
     title: "Snacky",
-    description:'Snacky was created as a pet project of mine as I\'m a big snacker and love to try new snacks, especially from foreign countries. Starting from my own design creation drawn on Figma, I chose Ruby on Rails to build this app essentially as a forum for sharing snacks and snack reviews. Certain aspects of the app are AJAX-ified such as the comments form and the tags form for instant updates without refreshing the page. This app is responsive for mobile and desktop.',
-    short_desc: 'A forum for sharing snacks and snack reviews',
+    description:'Snacky was created as a pet project of mine as I\'m a big snacker and love to try foreign snacks. Starting from my own design creation drawn on Figma, I chose Ruby on Rails to build this app as a forum for sharing snack reviews. Certain aspects of the app are AJAX-ified such as the comments form and the tags form for instant updates. This app is responsive for mobile and desktop.',
+    short_desc: 'A forum for sharing snack reviews',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555944/production/portfolio/snacky-hero_fxhp5d.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555949/production/portfolio/snacky-profile_xt9e8t.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555947/production/portfolio/snacky-post_aiycet.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043057/production/portfolio/snacky-mobile-profile_rynrwb.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043054/production/portfolio/snacky-mobile-feed_ulsldj.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669141986/production/portfolio/www.snacky.fun_posts_iPhone_12_Pro_atwytt.png'],
     alt:'home page of Snacky',
@@ -18,7 +19,7 @@ const projects = [
     ,
   { id: 2,
     title: "Session",
-    description:'Session was born out of the frustration that I was unable to share music with friends on a unified app. Session fulfills the social media aspect that music streaming services seem to lack. Through a Spotify API, users are able to create posts based on a song, artist or album they like. Users can see their updated Spotify statistics on their profiles including top artists, tracks and playlists. Session was created in two weeks as the final project of the Le Wagon - Madrid Bootcamp, batch #785. Since then I\'ve made a desktop version of the app as well as implemented an instant chat for two users using Action Cable and Web Socket.',
+    description:'Session fulfills the social media aspect of music streaming apps. Through a Spotify API, users are able to create posts based on a song, artist or album. Users can see their updated Spotify statistics on their profiles including top artists, tracks and playlists. Session was built in two weeks as the final project of the Le Wagon, Madrid Bootcamp, batch #785. Since then I\'ve made a desktop version of the app and implemented an instant chat using Action Cable and Web Socket.',
     short_desc: 'A social media platform that integrates Spotify for sharing music with friends',
     img: ["https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.47.27_PM_n18yod.png", "https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.46.34_PM_iczux4.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135673/production/portfolio/Screen_Shot_2022-11-22_at_5.45.47_PM_xuefy7.png","https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669135674/production/portfolio/Screen_Shot_2022-11-22_at_5.45.25_PM_s7xujr.png"],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043067/production/portfolio/session-mobile-feed_pcfhwc.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043063/production/portfolio/session-mobile-new_nyr10e.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669131647/production/portfolio/www.sessionapp.xyz_chatrooms_4_iPhone_12_Pro_vswohm.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669047349/production/portfolio/session-mobile-profile_ecpqd3.png'],
@@ -35,7 +36,7 @@ const projects = [
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555954/production/portfolio/metcog-hero_h1z2wk.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668555951/production/portfolio/metcog-index_t9q1gw.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784382/production/portfolio/metcog-mobile-hero_nzzibg.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1668784375/production/portfolio/metcog-mobile-menu_ez6aii.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1669043064/production/portfolio/metcog-exercise_blwubn.png'],
     alt:'home page of MetCog',
-    live:'http://www.metcog.xyz',
+    live:'https://harmonious-gaufre-ab8eb9.netlify.app/',
     code:'https://github.com/vschang/metcog/tree/master',
     tech: ['ReactJS', 'Sass'],
     icons: ['ion:logo-react', 'ion:logo-sass']},
@@ -51,13 +52,13 @@ const projects = [
     tech: ['Ruby on Rails', 'Stimulus JS', 'Bootstrap CSS','PostgreSQL'],
     icons: ['mdi:language-ruby-on-rails', 'simple-icons:stimulus', 'simple-icons:bootstrap', 'akar-icons:postgresql-fill']},
   { id: 5,
-    title: "Zoe Kline Yoga",
-    description:'A Yoga website remade from a SquareSpace template. Allowing the user to find info, book classes and connect with Zoe.',
+    title: "Zoe Yoga",
+    description:'A local yoga buisness website remade and personally redesigned from a SquareSpace template. The site allows users to discover information, book classes and connect with Zoe.',
     short_desc: 'A ReactJS-based yoga website remade from a SquareSpace template',
     img: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-desk-hero_trmhoy.png','https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-desk-contact_knslok.png'],
     img_mobile: ['https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-mobile-hero_ljogrc.png', 'https://res.cloudinary.com/le-wagon-785-vchang/image/upload/v1681466738/production/portfolio/zoe-mobile-menu_pboqd1.png'],
     alt:'home page of Zoe Kline Yoga',
-    live: ['https://6437f339dd7cae0008bc0d88--beamish-lamington-ecd9d0.netlify.app/'],
+    live: ['https://zoekline.online/'],
     code:'https://github.com/vschang/zoe-kline-website',
     tech: ['ReactJS'],
     icons: ['ion:logo-react']}
@@ -136,11 +137,11 @@ class ProjectSection extends React.Component {
     return (
       <div className="Project-section">
         <button id="Project-btn-back" onClick={() => this.goBack()} onMouseEnter={() => {this.showCursorBack(); this.followCursorBack()}} onMouseLeave={() => this.hideCursorBack()} >
-        ◀️
+          <Icon className="left-arrow" icon="carbon:arrow-up" />
         </button>
           {projects.map((project, i) => {
             return <Project
-              key={project.id}
+              key={Math.random()}
               number={project.id}
               title={project.title}
               description={project.description}
@@ -156,7 +157,7 @@ class ProjectSection extends React.Component {
             />;
           })}
         <button id="Project-btn-fwd" onClick={() => this.goForward()} onMouseEnter={() => {this.showCursorNext(); this.followCursorNext()}} onMouseLeave={() => this.hideCursorNext()}>
-        ▶️
+          <Icon className="right-arrow" icon="carbon:arrow-up" />
         </button>
 
         <div id="Back-cursor">

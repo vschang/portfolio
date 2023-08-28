@@ -18,6 +18,16 @@ html {
 
 /* add this class to body when the modal is open */
 .stop-scrolling {
-  /* height: 100vh; */
   overflow: hidden;
+}
+
+@font-face {
+  font-family: 'SF-Pro-Light';
+  src: local('SF-Pro-Light'),
+  url(./fonts/SF-Pro-Text-Ultralight.otf) format('opentype');
+}
+@font-face {
+  font-family: 'SF-Pro-Regular';
+  src: local('SF-Pro-Regular'),
+  url(./fonts/SF-Pro-Text-Regular.otf) format('opentype');
 }
